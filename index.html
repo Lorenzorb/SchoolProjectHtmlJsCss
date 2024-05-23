@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Time</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+	<script src="script.js"></script>
+
+    
+    <div class="multiple-choice-template">
+        <h2>Part 1: Multiple Choice</h2>
+        <h3 id="h3-question-text">This is the multiple choice template</h3>
+        <div class="container-answers">
+            <div id="container-answers-ab">
+                <button class="button-multiple-choice" id="button-a" onclick="toggleSelected(this)">A</button>
+                <button class="button-multiple-choice" id="button-b" onclick="toggleSelected(this)">B</button>
+            </div>
+            <div id="container-answers-cd">
+                <button class="button-multiple-choice" id="button-c" onclick="toggleSelected(this)">C</button>
+                <button class="button-multiple-choice" id="button-d" onclick="toggleSelected(this)">D</button>
+            </div>
+        </div>
+        <div id="container-check-answer">
+            <button class="button-check-answer" id="button-lockin" onclick="checkMultipleChoiceAnswer()">Lock in answer</button>
+        </div>
+    </div>
+
+    
+    <div class="container-free-response-template">
+        <h2>Part 2: Free Response</h2>
+        <h3 id="h3-question-text">This is the free response template</h3>
+        <div class="container-answers">
+            <div class="container-response">
+                <input id="input-response" onclick="clearTextBox(this)"></button>
+                <button id="button-check-response" onclick="checkFreeResponseAnswer('input-response')">Check</button>
+            </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>
