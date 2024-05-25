@@ -131,9 +131,9 @@ h2 {
     width: 100%; /* Adjust width as needed */
 }
 
-.container-free-response-template {
+/* .container-free-response-template {
     border-top: 2px solid #ccc; /* Add border-top to create a line between the two question sections */
-}
+} */
 
 .button-multiple-choice:hover {
     background-color: grey;
@@ -152,7 +152,7 @@ h2 {
 #input-response {
     padding: 10px 20px; /* Match the padding of the button */
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     border-radius: 5px;
     width: 200px; /* Match the width of the button */
     box-sizing: border-box;
